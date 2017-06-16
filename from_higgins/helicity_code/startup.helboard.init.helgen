@@ -1,0 +1,44 @@
+# start helicity control sequencer
+
+seq &helicity_control_sequencer
+
+# initialize helicity control board signals
+
+# set clock mode to free clock
+sp dbpf, "HELCLOCKs", "3"
+sp dbpf, "HELCLOCKALARMd.HIHI", "4"	
+sp dbpf, "HELCLOCKALARMd.LOLO", "2"
+sp dbpf, "HELCLOCKALARMd.HHSV", "2"
+sp dbpf, "HELCLOCKALARMd.LLSV", "2"
+
+# set tsettle input range to second group
+sp dbpf, "HELTSETTLEsel", "1"
+# set tsettle input to 500 usec
+sp dbpf, "HELTSETTLEs2", "9"
+sp dbpf, "HELTSETTLEd.HIHI", "501"
+sp dbpf, "HELTSETTLEd.LOLO", "499"
+sp dbpf, "HELTSETTLEd.HHSV", "2"
+sp dbpf, "HELTSETTLEd.LLSV", "2"
+
+# set tstable input range to first group
+sp dbpf, "HELTSTABLEsel", "0"
+# set tstable input to 400 usec
+sp dbpf, "HELTSTABLEs1", "0"
+sp dbpf, "HELTSTABLEd.HIHI", "401"
+sp dbpf, "HELTSTABLEd.LOLO", "399"
+sp dbpf, "HELTSTABLEd.HHSV", "2"
+sp dbpf, "HELTSTABLEd.LLSV", "2"
+
+# set pattern to quartet
+sp dbpf, "HELPATTERNs", "4"
+sp dbpf, "HELPATALARMd.HIHI", "5"
+sp dbpf, "HELPATALARMd.LOLO", "3"
+sp dbpf, "HELPATALARMd.HHSV", "2"
+sp dbpf, "HELPATALARMd.LLSV", "2"
+
+# set reporting delay to 8 windows
+sp dbpf, "HELDELAYs", "4"
+sp dbpf, "HELDELAYALARMd.HIHI", "5"
+sp dbpf, "HELDELAYALARMd.LOLO", "3"
+sp dbpf, "HELDELAYALARMd.HHSV", "2"
+sp dbpf, "HELDELAYALARMd.LLSV", "2"

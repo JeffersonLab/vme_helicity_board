@@ -1,0 +1,13 @@
+# IOC: t8
+# APP: helboard
+helboard_loaded = 1
+
+# load helboard code
+ld < helboardO/helboard.o
+
+# load database and definitions
+dbLoadDatabase("helboardV/db/helboard.dbd")
+dbLoadRecords("helboardV/db/helboard.db")
+
+# initialize helicity board (driver function)
+init_HEL(0xA00000)

@@ -1,0 +1,15 @@
+
+ drvHEL.c   Based on Higgin's code but ported to Linux.
+ 
+            Notice things like 
+               vmeOpenDefaultWindows();
+               vmeBusLock();
+            and vmeBusToLocalAdrs instead of sysBusToLocalAdrs
+
+
+  helbd.c   main code. 
+            So, you call a sequence of library functions by
+            typing on the Intel board 
+
+                     ./helbd
+

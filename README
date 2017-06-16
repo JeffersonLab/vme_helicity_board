@@ -1,0 +1,36 @@
+Code to drive the helicity board
+
+This was taken from Scott Higgins, where
+it worked on vxWorks, and ported to Intel CPU
+by R. Michaels in Sept 2013.
+
+Directories:
+
+from_higgins:
+   helicity_code from S. Higgins
+   this worked on vxWorks, though I have not tried it.
+
+port_higgins:
+
+   A nearly direct port of Higgins
+   drvHEL.c  -- driver lib
+   helbd.c   -- (main) to exercise the driver
+   Makefile
+
+   Notice things like 
+               vmeOpenDefaultWindows();
+               vmeBusLock();
+      and vmeBusToLocalAdrs instead of sysBusToLocalAdrs
+
+
+using_struct:
+
+   This version uses a "struct" for memory map, which I 
+   think is a cleaner design.
+
+   HelBoard.c -- driver lib
+   helbd.c   -- (main) to exercise the driver.
+         Do this to execute the code on Linux/Intel cpu
+                ./helbd
+   Makefile
+

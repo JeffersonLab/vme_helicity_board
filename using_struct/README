@@ -1,0 +1,15 @@
+
+ Intel/Linux based code to interact with the Helicity board.
+
+ R. Michaels
+
+ It was ported from S. Higgins' vxWorks code and
+ modified to organize the memory map in a structure,
+ hence the "using_struct" in the name of the directory.
+
+ I believe the history was
+
+ Start with ../from_higgins  (vxWorks based code)
+ then ../port_higgins (nearly a direct port to Linux)
+ then this directory, which is my latest version.
+

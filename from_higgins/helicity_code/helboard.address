@@ -1,0 +1,17 @@
+# helicity board v1.7 
+#
+# signal name	card	signal	par	#DTYP
+#----------------------------------------------
+HELTSETTLEout	0	0	@dummy	#VME_HEL
+HELTSETTLEin	0	0	@dummy	#VME_HEL
+HELTSTABLEout	0	1	@dummy	#VME_HEL
+HELTSTABLEin	0	1	@dummy	#VME_HEL
+HELDELAYout	0	2	@dummy	#VME_HEL
+HELDELAYin	0	2	@dummy	#VME_HEL
+HELMONTH	0	3	@dummy	#VME_HEL
+HELDAY		0	4	@dummy	#VME_HEL
+HELYEAR		0	5	@dummy	#VME_HEL
+HELPATTERNout	0	6	@dummy	#VME_HEL
+HELPATTERNin	0	6	@dummy	#VME_HEL
+HELCLOCKout	0	7	@dummy	#VME_HEL
+HELCLOCKin	0	7	@dummy	#VME_HEL
