@@ -71,7 +71,7 @@ INSTALL_DIR = ~/vme
 
 # Build targets
 
-all: drvHEL.o
+all: drvHEL.o devLoHEL.o devLiHEL.o
 
 clean:
 	@rm -f drvHel/*.0 drvHel/*~
