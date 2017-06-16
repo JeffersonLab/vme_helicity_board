@@ -1,11 +1,7 @@
 #  Build system
 
 VXWORKS = /site/vxworks
-
 EPICS = /site/epics/R3.13.4/base
-
-CODA = /site/coda/2.6.2
-
 
 # Define host operating system
 ifndef OSNAME
